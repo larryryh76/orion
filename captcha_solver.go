@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"image"
-	"image/png"
+	_ "image/png"
 	"net/http"
 	"os"
 	"os/exec"
@@ -123,8 +123,10 @@ func (cs *CaptchaSolver) evaluateMath(expr string) string {
 		parts := strings.Split(expr, "+")
 		if len(parts) == 2 {
 			var a, b int
-			if fmt.Sscanf(parts[0], "%d", &a) == 1 && fmt.Sscanf(parts[1], "%d", &b) == 1 {
-				return fmt.Sprintf("%d", a+b)
+			if n1, _ := fmt.Sscanf(parts[0], "%d", &a); n1 == 1 {
+				if n2, _ := fmt.Sscanf(parts[1], "%d", &b); n2 == 1 {
+					return fmt.Sprintf("%d", a+b)
+				}
 			}
 		}
 	}
