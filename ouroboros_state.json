@@ -1,0 +1,18 @@
+{
+  "target_urls_loaded": true,
+  "real_sites_count": 9,
+  "priority_sites": [
+    "prolific.co",
+    "swagbucks.com",
+    "surveyjunkie.com",
+    "usertesting.com",
+    "respondent.io",
+    "inboxdollars.com",
+    "mypoints.com",
+    "toluna.com",
+    "vindale.com",
+    "pineconeresearch.com"
+  ],
+  "production_mode": true,
+  "last_updated": 1759493036.26982
+}

@@ -1,0 +1,10 @@
+{
+  "production_mode": true,
+  "account_creation_enabled": true,
+  "conditioning_enabled": true,
+  "verification_bypass_active": true,
+  "created_accounts": {},
+  "conditioning_queue": [],
+  "ready_accounts": [],
+  "last_updated": 1759493036.2705708
+}

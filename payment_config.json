@@ -1,0 +1,17 @@
+{
+  "wallet_addresses": {
+    "bitcoin": null,
+    "ethereum": null
+  },
+  "api_keys": {
+    "etherscan": null,
+    "blockchain_info": null
+  },
+  "monitoring_settings": {
+    "check_interval": 300,
+    "min_confirmations": {
+      "bitcoin": 1,
+      "ethereum": 12
+    }
+  }
+}

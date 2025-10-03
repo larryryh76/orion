@@ -1,0 +1,37 @@
+{
+  "crypto_addresses": {
+    "bitcoin": {
+      "primary": "bc1qtj2huh70untgqarkm8g5d362qd657a3mk369j3",
+      "backup": "",
+      "network": "Bitcoin"
+    },
+    "ethereum": {
+      "primary": "0xAE909dDcf7e38F7Ed866c17D7245b36E8077dc77",
+      "backup": "",
+      "network": "ERC-20"
+    },
+    "usdt_eth": {
+      "primary": "0xAE909dDcf7e38F7Ed866c17D7245b36E8077dc77",
+      "backup": "",
+      "network": "ERC-20"
+    },
+    "toncoin": {
+      "primary": "UQBROenuqtlnZbke3LY2rrVxu-GlYbsOZ-QgqMgr87fdl9m9",
+      "backup": "",
+      "network": "TON"
+    }
+  },
+  "points_ledger": {},
+  "withdrawal_queue": [],
+  "transaction_history": [],
+  "operational_settings": {
+    "production_mode": true,
+    "data_gathering_only": false,
+    "financial_core_active": true,
+    "wallet_addresses_confirmed": true,
+    "auto_withdrawal_enabled": true,
+    "min_withdrawal_amount": 10.0,
+    "activation_timestamp": 1759494149.9919765
+  },
+  "timestamp": 1759494149.9919796
+}

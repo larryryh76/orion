@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "addresses_provided": true,
+  "validation_results": {
+    "bitcoin": true,
+    "ethereum": true,
+    "usdt": true,
+    "toncoin": true
+  },
+  "system_status": "fully_operational",
+  "activation_blocked": false,
+  "activation_timestamp": 1759494149.9933562
+}

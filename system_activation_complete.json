@@ -1,0 +1,14 @@
+{
+  "system_status": "fully_operational",
+  "plutus_financial_core": "active",
+  "wallet_addresses_configured": 4,
+  "production_mode": true,
+  "ready_for_operations": true,
+  "activation_timestamp": 1759494149.9947143,
+  "configured_wallets": {
+    "bitcoin": "bc1qtj2huh70untgqarkm8g5d362qd657a3mk369j3",
+    "ethereum": "0xAE909dDcf7e38F7Ed866c17D7245b36E8077dc77",
+    "usdt": "0xAE909dDcf7e38F7Ed866c17D7245b36E8077dc77",
+    "toncoin": "UQBROenuqtlnZbke3LY2rrVxu-GlYbsOZ-QgqMgr87fdl9m9"
+  }
+}

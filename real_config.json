@@ -1,0 +1,19 @@
+{
+  "captcha_services": {
+    "2captcha_api_key": null,
+    "anticaptcha_api_key": null
+  },
+  "proxy_services": {
+    "residential_proxy_endpoint": null,
+    "proxy_username": null,
+    "proxy_password": null
+  },
+  "blockchain_apis": {
+    "etherscan_api_key": null
+  },
+  "operational_limits": {
+    "max_daily_surveys": 15,
+    "delay_between_surveys": 1800,
+    "max_concurrent_browsers": 1
+  }
+}
