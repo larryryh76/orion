@@ -29,7 +29,7 @@ class _OrionDashboardState extends State<OrionDashboard> {
   Map<String, dynamic> _status = {};
   Map<String, dynamic> _earnings = {};
   Map<String, dynamic> _missions = {};
-  String _serverUrl = 'https://your-orion-server.com'; // Your cloud server URL
+  String _serverUrl = 'https://orion-system.onrender.com'; // Your Render URL
   String _webhookUrl = 'https://your-notification-service.com/webhook';
 
   @override
