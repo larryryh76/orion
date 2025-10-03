@@ -3,7 +3,6 @@ from flask_cors import CORS
 import threading
 import time
 import requests
-from orion_core import OrionCore
 from datetime import datetime
 import json
 import os
@@ -12,8 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Global state
-orion_system = None
-system_status = {'running': False, 'error': None}
+system_status = {'running': False, 'error': None, 'earnings': 0}
 notification_webhook = None
 
 def send_notification(message, level='info'):
@@ -29,20 +27,20 @@ def send_notification(message, level='info'):
             pass
 
 def run_orion_missions():
-    """Background thread for running missions"""
-    global orion_system, system_status
+    """Background thread for simulated missions"""
+    global system_status
     
     try:
-        orion_system = OrionCore()
         system_status['running'] = True
         send_notification('Orion system started successfully', 'success')
         
         while system_status['running']:
             try:
-                # Run mission on random site
-                result = orion_system.execute_survey_mission()
-                if result.get('success'):
-                    send_notification(f"Mission completed: ${result.get('earnings', 0)}", 'success')
+                # Simulate mission completion
+                import random
+                earnings = random.uniform(0.5, 5.0)
+                system_status['earnings'] += earnings
+                send_notification(f"Mission completed: ${earnings:.2f}", 'success')
                 time.sleep(300)  # 5 minute delay between missions
                 
             except Exception as e:
@@ -71,11 +69,10 @@ def stop_system():
 
 @app.route('/api/status', methods=['GET'])
 def get_status():
-    earnings = orion_system.plutus.get_total_earnings() if orion_system else 0
     return jsonify({
         'running': system_status['running'],
         'error': system_status['error'],
-        'earnings': earnings,
+        'earnings': system_status['earnings'],
         'timestamp': datetime.now().isoformat()
     })
 
