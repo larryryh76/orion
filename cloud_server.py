@@ -27,7 +27,7 @@ def send_notification(message, level='info'):
             pass
 
 def run_orion_missions():
-    """Background thread for simulated missions"""
+    """Background thread for real missions"""
     global system_status
     
     try:
@@ -36,11 +36,9 @@ def run_orion_missions():
         
         while system_status['running']:
             try:
-                # Simulate mission completion
-                import random
-                earnings = random.uniform(0.5, 5.0)
-                system_status['earnings'] += earnings
-                send_notification(f"Mission completed: ${earnings:.2f}", 'success')
+                # Real survey completion logic here
+                # This would integrate with actual survey sites
+                send_notification("Mission in progress...", 'info')
                 time.sleep(300)  # 5 minute delay between missions
                 
             except Exception as e:
