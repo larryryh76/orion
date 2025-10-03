@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
     python3 python3-pip golang-go curl wget \
-    chromium-browser xvfb && rm -rf /var/lib/apt/lists/*
+    chromium-browser xvfb libssl-dev pkg-config && rm -rf /var/lib/apt/lists/*
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
