@@ -14,7 +14,7 @@ pub struct ProxyInfo {
     pub protocol: String,
     pub speed: f64,
     pub success_rate: f64,
-    #[serde(skip)]
+    #[serde(skip, default = "Instant::now")]
     pub last_tested: Instant,
     pub failures: u32,
 }
